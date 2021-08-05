@@ -1,0 +1,1 @@
+assertify_files @ git+https://github.com/tybruno/assertify.git#egg=assertify_files
