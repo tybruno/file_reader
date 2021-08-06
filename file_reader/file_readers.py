@@ -15,21 +15,9 @@ class AbstractFileReader(ABC):
 
 
 @dataclass
-class TextFileReader(AbstractFileReader):
-    def __call__(self, file: Union[str, Path]) -> str:
-        path = Path(file)
-        try:
-            return path.read_text()
-        except FileNotFoundError as error:
-            raise FileReaderError from error
-
-
-@dataclass
 class BasicFileReader:
     parser: Callable
-    file_readers: Iterable[AbstractFileReader] = field(
-        default=(TextFileReader(),), init=False
-    )
+    file_readers: Iterable[AbstractFileReader]
 
     def __call__(self, file: Union[str, Path]):
         for file_reader in self.file_readers:

@@ -1,1 +1,0 @@
-parsers @ git+https://github.com/tybruno/parsers.git#egg=parsers
