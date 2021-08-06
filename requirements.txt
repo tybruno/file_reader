@@ -1,1 +1,1 @@
-assertify_files @ git+https://github.com/tybruno/assertify.git#egg=assertify_files
+parsers @ git+https://github.com/tybruno/parsers.git#egg=parsers
