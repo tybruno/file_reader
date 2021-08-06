@@ -1,7 +1,14 @@
+from abc import (
+    ABC,
+    abstractmethod,
+)
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Union, Iterable, Callable
-from dataclasses import dataclass, field
-from abc import ABC, abstractmethod
+from typing import (
+    Callable,
+    Iterable,
+    Union,
+)
 
 
 class FileReaderError(Exception):
