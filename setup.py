@@ -16,7 +16,7 @@ setuptools.setup(
     author=__author__,
     long_description=README,
     long_description_content_type="text/markdown",
-    keywords="python unittest pytest file files text excel assertions predicate predicates assert assertify verify verification booleans standalone",
+    keywords="python file files text excel",
     url="https://github.com/tybruno/file_reader",
     license="MIT",
     package_data={"file_reader": ["py.typed"]},
